@@ -1,0 +1,174 @@
+\hypertarget{solve__square_8h}{}\doxysection{solve\+\_\+square.\+h File Reference}
+\label{solve__square_8h}\index{solve\_square.h@{solve\_square.h}}
+
+
+Header file with descriprion of functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for solve\+\_\+square.\+h\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{solve__square_8h_aa84a29002ab81c719c0d07bb446296e0}\label{solve__square_8h_aa84a29002ab81c719c0d07bb446296e0}} 
+\#define {\bfseries I\+N\+F\+I\+N\+I\+TE}~-\/1
+\item 
+\mbox{\Hypertarget{solve__square_8h_a4fc90c1867edfa8fd4b9a9f3b7b434a5}\label{solve__square_8h_a4fc90c1867edfa8fd4b9a9f3b7b434a5}} 
+\#define {\bfseries I\+N\+F\+E\+L\+I\+C\+I\+TY}~1E-\/6
+\item 
+\mbox{\Hypertarget{solve__square_8h_a6821bafc3c88dfb2e433a095df9940c6}\label{solve__square_8h_a6821bafc3c88dfb2e433a095df9940c6}} 
+\#define {\bfseries B\+U\+F\+\_\+\+S\+I\+ZE}~64
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{solve__square_8h_a20563c9b2b1902b87dc6b2d612addccb}{solve\+\_\+linear}} (double a, double a, double $\ast$root\+\_\+ad)
+\begin{DoxyCompactList}\small\item\em This function solves linear equation (ax + b = 0) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solve__square_8h_a29842d48b148f2d5a01957684b1d12a1}{solve\+\_\+square}} (double a, double b, double c, double $\ast$root1\+\_\+ad, double $\ast$root2\+\_\+ad)
+\begin{DoxyCompactList}\small\item\em This function solves square equation (ax$^\wedge$2 + bx + c = 0) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solve__square_8h_a4cd98401e1b146358420cff205c16cd1}{input\+\_\+double}} (const char $\ast$name, double $\ast$value)
+\begin{DoxyCompactList}\small\item\em This function responsible for entering double value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solve__square_8h_ab00d912be3ba37c91acb349ae26da7f4}{is\+\_\+zero}} (double value)
+\begin{DoxyCompactList}\small\item\em This function comparing double value with zero according to I\+N\+F\+E\+L\+I\+C\+I\+TY (1E-\/6) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solve__square_8h_a9dfb8ab1050cb1b114a277c4b49c40a5}{solve\+\_\+square\+\_\+test}} (double a, double b, double c, int exp\+\_\+rcount, double exp\+\_\+root1, double exp\+\_\+root2)
+\begin{DoxyCompactList}\small\item\em This function make test of function solve\+\_\+square, that solve square equation (ax$^\wedge$2 + bx + c), and print everythig in stdout. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solve__square_8h_a281d0bf29fe412619d9d1f6d1c0b9b31}{run\+\_\+solve\+\_\+square\+\_\+testing}} ()
+\begin{DoxyCompactList}\small\item\em This function calls solve\+\_\+square\+\_\+test many times with different parameters and print everythin in stdout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file with descriprion of functions. 
+
+\begin{DoxyAuthor}{Author}
+Saint\+Aleksei 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+September 2021
+\end{DoxyDate}
+This file contains\+: Some defines; The defenition of all functions; 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{solve__square_8h_a4cd98401e1b146358420cff205c16cd1}\label{solve__square_8h_a4cd98401e1b146358420cff205c16cd1}} 
+\index{solve\_square.h@{solve\_square.h}!input\_double@{input\_double}}
+\index{input\_double@{input\_double}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{input\_double()}{input\_double()}}
+{\footnotesize\ttfamily int input\+\_\+double (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{double $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+This function responsible for entering double value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & Name of variable, that will store the number entered \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em value} & Pointer to a variable that will store the number entered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zero on success (this function works untill success) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve__square_8h_ab00d912be3ba37c91acb349ae26da7f4}\label{solve__square_8h_ab00d912be3ba37c91acb349ae26da7f4}} 
+\index{solve\_square.h@{solve\_square.h}!is\_zero@{is\_zero}}
+\index{is\_zero@{is\_zero}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{is\_zero()}{is\_zero()}}
+{\footnotesize\ttfamily int is\+\_\+zero (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+This function comparing double value with zero according to I\+N\+F\+E\+L\+I\+C\+I\+TY (1E-\/6) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & Double value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zero (value == 0) or not zero (value != 0) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve__square_8h_a281d0bf29fe412619d9d1f6d1c0b9b31}\label{solve__square_8h_a281d0bf29fe412619d9d1f6d1c0b9b31}} 
+\index{solve\_square.h@{solve\_square.h}!run\_solve\_square\_testing@{run\_solve\_square\_testing}}
+\index{run\_solve\_square\_testing@{run\_solve\_square\_testing}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{run\_solve\_square\_testing()}{run\_solve\_square\_testing()}}
+{\footnotesize\ttfamily int run\+\_\+solve\+\_\+square\+\_\+testing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function calls solve\+\_\+square\+\_\+test many times with different parameters and print everythin in stdout. 
+
+\begin{DoxyReturn}{Returns}
+Zero 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve__square_8h_a20563c9b2b1902b87dc6b2d612addccb}\label{solve__square_8h_a20563c9b2b1902b87dc6b2d612addccb}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_linear@{solve\_linear}}
+\index{solve\_linear@{solve\_linear}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_linear()}{solve\_linear()}}
+{\footnotesize\ttfamily int solve\+\_\+linear (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{a,  }\item[{double $\ast$}]{root\+\_\+ad }\end{DoxyParamCaption})}
+
+
+
+This function solves linear equation (ax + b = 0) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & The first coefficient of the equation \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & The second coefficient of the equation \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em root\+\_\+ad} & A pointer to a variable that will store root of the equation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Count of roots (0, 1 or special defined constant I\+N\+F\+I\+N\+I\+TE (-\/1) ) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve__square_8h_a29842d48b148f2d5a01957684b1d12a1}\label{solve__square_8h_a29842d48b148f2d5a01957684b1d12a1}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_square@{solve\_square}}
+\index{solve\_square@{solve\_square}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_square()}{solve\_square()}}
+{\footnotesize\ttfamily int solve\+\_\+square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{root1\+\_\+ad,  }\item[{double $\ast$}]{root2\+\_\+ad }\end{DoxyParamCaption})}
+
+
+
+This function solves square equation (ax$^\wedge$2 + bx + c = 0) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & The first coefficient of the equation \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & The second coefficient of the equation \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & The third coefficient of the equation \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em root1\+\_\+ad} & A pointer to a variable that will store the first root of the equation \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em root2\+\_\+ad} & A pointer to a variable that will store the second root of the equation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Count of roots (0, 1, 2 or special defined constant I\+N\+F\+I\+N\+I\+TE (-\/1) ) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve__square_8h_a9dfb8ab1050cb1b114a277c4b49c40a5}\label{solve__square_8h_a9dfb8ab1050cb1b114a277c4b49c40a5}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_square\_test@{solve\_square\_test}}
+\index{solve\_square\_test@{solve\_square\_test}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_square\_test()}{solve\_square\_test()}}
+{\footnotesize\ttfamily int solve\+\_\+square\+\_\+test (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{int}]{exp\+\_\+rcount,  }\item[{double}]{exp\+\_\+root1,  }\item[{double}]{exp\+\_\+root2 }\end{DoxyParamCaption})}
+
+
+
+This function make test of function solve\+\_\+square, that solve square equation (ax$^\wedge$2 + bx + c), and print everythig in stdout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & The first coefficient of the equation \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & The second coefficient of the equation \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & The third coefficient of the equation \textbackslash{}parem\mbox{[}in\mbox{]} exp\+\_\+rcount Expected count of roots \textbackslash{}parem\mbox{[}in\mbox{]} exp\+\_\+root1 Expected value of the first root (zero if nothing expected) \textbackslash{}parem\mbox{[}in\mbox{]} exp\+\_\+root2 Expected value of the second root (zero if nothing expected) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+One in case of success and zero otherwise 
+\end{DoxyReturn}
